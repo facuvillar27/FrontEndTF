@@ -1,0 +1,84 @@
+body {
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4em 4em 0em 4em;
+}
+
+nav {
+    display: none;
+}
+
+header article button {
+    display: none;
+}
+
+.menu-hamburgesa {
+    transform: scale(2);
+}
+
+main article {
+    margin: 0em 4em 1em 4em;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: end;
+}
+
+main article div img {
+    transform: scale(0.7);
+}
+
+main article div h1 {
+    color: #232851;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+main article div h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+main article div button {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 15px 42px;
+    border-radius: 30px;
+    border-width: 0px;
+    background-color: #8B48BF;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: white;
+    background-color: #3CDDF3;
+    margin: 0px;
+    padding: 2em 2em 2em 1em;
+    text-align: start;
+}
+
+.intro h2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-right: 3em;
+}
+
+.intro p {
+    font-size: 15px;
+    font-weight: 500;
+    padding-right: 1.3em;
+}
