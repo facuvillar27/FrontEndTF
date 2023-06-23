@@ -26,7 +26,7 @@ header article button {
     transform: scale(2);
 }
 
-main article div:nth-child(2n) {
+.mainTitle {
     padding: 0em 2.5em 2.5em 2em;
 }
 
@@ -97,7 +97,13 @@ main article div button {
     width: 100%;
 }
 
-.aboutUs1 {
+.mainAboutUs div div:nth-child(2) {
+    padding: 0.8em 3em 1.6em 2em;
+}
+
+.aboutUs1Title,
+.aboutUs2Title,
+.aboutUs3Title {
     display: flex;
     font-size: 13px;
     align-items: center;
@@ -108,7 +114,9 @@ main article div button {
     width: 100%;
 }
 
-.aboutUs1::before {
+.aboutUs1Title::before,
+.aboutUs2Title::before,
+.aboutUs3Title::before {
     content: "01";
     color: white;
     background-color: #8B48BF ;
@@ -118,63 +126,38 @@ main article div button {
     margin: 0em 1.5em 0em 0em;
 }
 
-
-.aboutUs2 {
-    display: flex;
-    font-size: 13px;
-    align-items: center;
-    background-color: hsla(274, 48%, 52%, 0.308);
-    margin: 0px 0px 0px 30px;
-    border-radius: 30px 0px 0px 30px;
-    font-weight: 700;
-    width: 100%;
-}
-
-.aboutUs2::before {
+.aboutUs2Title::before {
     content: "02";
-    color: white;
-    background-color: #8B48BF ;
-    border-radius: 30px;
-    padding: 12px 25px;
-    align-self: center;
-    margin: 0em 1.5em 0em 0em;
 }
 
-.aboutUs3 {
-    display: flex;
-    font-size: 13px;
-    align-items: center;
-    background-color: hsla(274, 48%, 52%, 0.308);
-    margin: 0px 0px 0px 30px;
-    border-radius: 30px 0px 0px 30px;
-    font-weight: 700;
-    width: 100%;
-}
-
-.aboutUs3::before {
+.aboutUs3Title::before {
     content: "03";
-    color: white;
-    background-color: #8B48BF ;
-    border-radius: 30px;
-    padding: 12px 25px;
-    align-self: center;
-    margin: 0em 1.5em 0em 0em;
 }
 
-.mainAboutUs div:nth-child(2n) {
+.mainAboutUs div div:nth-child(2n) {
     text-align: start;
     color: #b3b2b7;
     font-size: 15px;
     margin: 1em 0em 0em 0.5em;
+    line-height: 1.8em;
+}
+
+.aboutUs3Desktop {
+    display: none;
 }
 
 .mainLow {
     text-align: center;
 }
 
-.mainLow div img {
+.navarro,
+.sanyo {
+    display: none;
+}
+
+.lebron div img {
     position: relative;
-    bottom: 3em;
+    bottom: 5.5em;
     transform: scale(0.9);
 }
 
@@ -183,30 +166,31 @@ main article div button {
     padding: 0em 0em 0em 0em;
 }
 
-.mainLow div h4 {
+.mainLow div div div h4 {
     font-size: 13px;
     font-weight: 700;
 }
 
-.mainLow div p {
+.mainLow div div div p {
     font-size: 16px;
     color: #b3b2b7;
 }
 
-.mainLow div:nth-child(2) {
+.lebron div:nth-child(1) {
     position: relative;
     top: 8em;
 }
 
-.mainLow div:nth-child(3) {
+.lebron div:nth-child(2) {
     background-color: rgb(249, 249, 249);
     margin: 0em 1em;
-    padding: 2.5em 1.5em 1.2em 1.5em;
+    padding: 2.5em 1em 1.2em 1em;
 }
 
-.mainLow div:nth-child(4) {
+.buttonPeople {
     margin: 3em 0em;
 }
+
 
 footer article:nth-child(1) {
     text-align: center;
@@ -215,6 +199,10 @@ footer article:nth-child(1) {
     font-weight: 700;
     color: white;
     background-color: #3CDDF3;
+}
+
+.desktopFooterText {
+    display: none;
 }
 
 footer article:nth-child(1) button {
@@ -386,5 +374,155 @@ footer article div:nth-child(5) {
         padding: 2em 20em 2em 8em;
         line-height: 1.5;
     }
+    
+    .mainAboutUs {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(249, 249, 249);
+        padding: 2em 4em 0em 4em;
+    }
 
+    .aboutUs1Title,
+    .aboutUs2Title,
+    .aboutUs3Title {
+        background-color: rgb(249, 249, 249);
+        font-size: 16px;
+    }
+      
+    .aboutUs1,
+    .aboutUs2 {
+        flex-basis: 50%;
+        padding: 0.8em 1em;
+    }
+
+    .aboutUs2Title {
+        margin: 0em;
+    }
+
+    .aboutUs1Text p {
+        padding: 0em 7em 0em 5.2em;
+        line-height: 1.8em;
+    }
+
+    .aboutUs2Text p {
+        padding: 0em 8em 0em 4em;
+        line-height: 1.8em;
+    }
+      
+    .aboutUs3 {
+        display: none;
+    }
+
+    .aboutUs3Desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background-color: rgb(249, 249, 249);
+    }
+
+    .mainAboutUs2 {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(249, 249, 249);
+        padding: 0em 30em 2em 25em;
+    }
+
+    .mainAboutUs2 div div:nth-child(2) p {
+        color: #b3b2b7;
+        text-align: start;
+        font-size: 15px;
+        line-height: 1.8em;
+    }
+
+    .aboutUs3DesktopText p {
+        padding: 0em 0em 0em 8.5em;
+        line-height: 1.8em;
+    }
+
+    .mainLow div h1 {
+        padding-top: 2em;
+    }
+
+    .people {
+        display: flex;
+        flex-direction: row;
+        margin: 0em 4em;
+        
+    }
+
+    .navarro,
+    .sanyo {
+        display: block;
+    }
+
+    .navarro div:nth-child(2),
+    .sanyo div:nth-child(2) {
+        background-color: rgb(249, 249, 249);
+        margin: 0em;
+        padding: 2.5em 1em 1.2em 1em;
+    }
+
+    .lebron div:nth-child(2) {
+        margin: 0em;
+    }
+
+    .mainLow div div div p {
+        line-height: 1.8em;
+        padding-top: 0.8em;
+    }
+
+    .mainLow div div div h4 {
+        font-size: 16px;
+        color:#232851;
+    }
+
+    main article div img {
+        margin: 0em;
+    }
+
+    .lebron div img {
+        transform: scale(1);
+    }
+
+    .navarro div img,
+    .sanyo div img {
+        position: relative;
+        top: 2.4em;
+    }
+
+    .buttonPeople {
+        padding-bottom: 4em;
+    }
+
+    .buttonPeople button:hover {
+        background-color: hsla(274, 48%, 52%, 0.699);
+        cursor: pointer;
+    }
+
+    footer article:nth-child(1) {
+        display: flex;
+        background-color: #8B48BF;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 7em 1em 4em;
+    }
+
+    .mobileFooterText {
+        display: none;
+    }
+
+    .desktopFooterText {
+        display: block;
+        text-align: start;
+    }
+
+    footer article:nth-child(1) button {
+        background-color: white;
+        color: #8B48BF;
+        padding: 1em;
+        height: 50px;
+        width: 150px;
+        font-size: 15px;
+    }
 }
