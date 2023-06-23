@@ -69,9 +69,8 @@ main article div button {
     justify-content: start;
     color: white;
     background-color: #3CDDF3;
-    padding: 1em 5em 1em 1em;
+    padding: 1em 5em 1em 2em;
     text-align: start;
-    width: 100%;
 }
 
 .intro h2 {
@@ -108,10 +107,9 @@ main article div button {
     font-size: 13px;
     align-items: center;
     background-color: hsla(274, 48%, 52%, 0.308);
-    margin: 0px 0px 0px 30px;
+    margin: 0px 0px 0px 60px;
     border-radius: 30px 0px 0px 30px;
     font-weight: 700;
-    width: 100%;
 }
 
 .aboutUs1Title::before,
@@ -138,7 +136,7 @@ main article div button {
     text-align: start;
     color: #b3b2b7;
     font-size: 15px;
-    margin: 1em 0em 0em 0.5em;
+    margin: 1em 0em 0em 2.3em;
     line-height: 1.8em;
 }
 
@@ -205,6 +203,12 @@ footer article:nth-child(1) {
     display: none;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e26;
+}
+
 footer article:nth-child(1) button {
     color: white;
     font-size: 12px;
@@ -268,19 +272,26 @@ footer article div ul li {
     margin: 1em 0em;
 }
 
-footer article div:nth-child(3) {
+.logoFooterDesktop {
+    display: none;
+}
+
+.community {
     display: flex;
     justify-content: space-between;
-    padding: 0em 3em 1em 3em;
+    padding: 2em 3em 1em 3em;
 }
 
-footer article div:nth-child(4) {
-    margin: 2em
+.logoFooterMobile {
+    margin-top: 2em;
 }
 
-footer article div:nth-child(5) {
+footer article:nth-last-child(1) {
     color:#8C8C94;
     font-size: 12px;
+    background-color: #1e1e26;
+    text-align: center;
+    padding-bottom: 2em;
 }
 
 
@@ -300,6 +311,7 @@ footer article div:nth-child(5) {
         display: flex;
         flex-direction: row;
         order: 2;
+        font-size: 12px;
     }
 
     nav ul li {
@@ -309,6 +321,7 @@ footer article div:nth-child(5) {
 
     nav ul {
         display: flex;
+        padding: 0em;
     }
 
     header article:nth-child(3) {
@@ -337,6 +350,10 @@ footer article div:nth-child(5) {
         margin: 0em 6em 2em 6em;
     }
 
+    .mainTitle {
+        padding: 0em 2.5em 2.5em 12em;
+    }
+
     main article div img {
         transform: scale(1);
         margin: 5em 4em 4em 5em;
@@ -355,7 +372,7 @@ footer article div:nth-child(5) {
         background-color: #8B48BF;
         flex-direction: row;
         justify-content: center;
-        padding: 0em 8em;
+        padding: 0em 0em 0em 4em;
     }
 
     .intro h2 {
@@ -371,15 +388,16 @@ footer article div:nth-child(5) {
     .intro p:nth-child(3) {
         display: block;
         width: 50%;
-        padding: 2em 20em 2em 8em;
+        padding: 2em 13em 2em 8em;
         line-height: 1.5;
     }
     
     .mainAboutUs {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         background-color: rgb(249, 249, 249);
-        padding: 2em 4em 0em 4em;
+        padding: 3em 0em 0em 0em;
     }
 
     .aboutUs1Title,
@@ -388,11 +406,19 @@ footer article div:nth-child(5) {
         background-color: rgb(249, 249, 249);
         font-size: 16px;
     }
+
+    .aboutUs3Title {
+        margin: 0em;
+    }
       
-    .aboutUs1,
+    .aboutUs1 {
+        flex-basis: 50%;
+        padding: 0.8em 0em 0.8em 0.5em;
+    }
+
     .aboutUs2 {
         flex-basis: 50%;
-        padding: 0.8em 1em;
+        padding: 0.8em 2em 0.8em 3em;
     }
 
     .aboutUs2Title {
@@ -400,13 +426,21 @@ footer article div:nth-child(5) {
     }
 
     .aboutUs1Text p {
-        padding: 0em 7em 0em 5.2em;
+        color: #b3b2b7;
+        text-align: start;
+        font-size: 15px;
         line-height: 1.8em;
+        padding: 0em 0em 0em 10em;
+        margin-top: 0em;
     }
 
     .aboutUs2Text p {
-        padding: 0em 8em 0em 4em;
+        color: #b3b2b7;
+        text-align: start;
+        font-size: 15px;
         line-height: 1.8em;
+        padding: 0em 8em 0em 2em;
+        margin-top: 0em;
     }
       
     .aboutUs3 {
@@ -424,19 +458,15 @@ footer article div:nth-child(5) {
         display: flex;
         flex-direction: row;
         background-color: rgb(249, 249, 249);
-        padding: 0em 30em 2em 25em;
+        padding: 0em 25em 2em 25em;
     }
 
-    .mainAboutUs2 div div:nth-child(2) p {
+    .aboutUs3DesktopText p {
         color: #b3b2b7;
         text-align: start;
         font-size: 15px;
         line-height: 1.8em;
-    }
-
-    .aboutUs3DesktopText p {
-        padding: 0em 0em 0em 8.5em;
-        line-height: 1.8em;
+        padding: 0em 8em 0em 6.5em;
     }
 
     .mainLow div h1 {
@@ -446,8 +476,7 @@ footer article div:nth-child(5) {
     .people {
         display: flex;
         flex-direction: row;
-        margin: 0em 4em;
-        
+        margin: 0em 4em;        
     }
 
     .navarro,
@@ -469,6 +498,7 @@ footer article div:nth-child(5) {
     .mainLow div div div p {
         line-height: 1.8em;
         padding-top: 0.8em;
+        font-size: 14px;
     }
 
     .mainLow div div div h4 {
@@ -525,4 +555,93 @@ footer article div:nth-child(5) {
         width: 150px;
         font-size: 15px;
     }
+
+    footer article:nth-child(2) {
+        padding: 4em 2em 2em 2em;
+    }
+
+    .logoFooterMobile {
+        display: none;
+    }
+
+    .logoFooterDesktop {
+        display: block;
+    }
+
+    footer article:nth-child(2) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: start;
+    }
+
+    footer article form {
+        flex-basis: 50%;
+    }
+
+    .menuFooter {
+        flex-basis: 100%;
+        display: block;
+    }
+
+    .menuFooter ul {
+        flex-basis: 100%;
+        margin: 0em;
+    }
+
+    footer article div ul:nth-child(1) {
+        padding: 0em;
+    }
+
+    footer article div ul:nth-child(2) {
+        padding: 0em 0em 0em 3em;
+    }
+
+    .menuFooter ul li {
+        padding: 0.35em;
+    }
+
+    .menuFooter ul li:nth-child(1) {
+        padding-top: 0em;
+        margin-top: 0em;
+    }
+
+    .logo-community {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        align-items: start;
+        padding: 0em 0em 0em 5em;
+    }
+
+    .logoFooterDesktop {
+        padding-bottom: 4em;
+    }
+
+    .community {
+        padding: 2em 0em;
+    }
+
+    .community img {
+        padding-right: 1.5em;
+    }
+
+    footer article form {
+        display: flex;
+        text-align: end;
+        padding: 0em 8em 0em 0em;
+    }
+
+    footer article form input {
+        width: 180px;
+    }
+
+    footer article form button {
+        padding: 15px 30px;
+    }
+
+    footer article:nth-last-child(1) {
+        text-align: end;
+        margin-right: 0em;
+        padding: 0em 14em 2em 0em;
+
 }
